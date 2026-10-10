@@ -1,0 +1,345 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f5f7fc;
+
+    color: #111827;
+
+    min-height: 100vh;
+}
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 15px;
+}
+
+.login-card {
+    width: 100%;
+
+    max-width: 500px;
+
+    background: #ffffff;
+
+    border: 1px solid #e9edf5;
+
+    border-radius: 10px;
+
+    padding: 41px 27px 27px;
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.02);
+}
+
+.logo-box {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 16px;
+}
+
+.logo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.login-heading {
+    text-align: center;
+
+    margin-bottom: 36px;
+}
+
+.login-heading h1 {
+    font-size: 30px;
+
+    line-height: 1.2;
+
+    font-weight: 500;
+
+    margin-bottom: 5px;
+
+    font-weight: 500;
+}
+
+.login-heading p {
+    font-size: 14px;
+
+    color: #6b7280;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+
+    font-size: 14px;
+
+    color: #1f2937;
+
+    margin-bottom: 4px;
+}
+
+.password-label {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 4px;
+}
+
+.password-label label {
+    margin-bottom: 0;
+}
+
+.password-label a {
+    font-size: 14px;
+
+    color: #075fe5;
+
+    text-decoration: none;
+}
+
+.password-label a:hover {
+    text-decoration: underline;
+}
+
+.input-box {
+    height: 35px;
+
+    width: 100%;
+
+    border: 1px solid #cbd2e1;
+
+    border-radius: 8px;
+
+    background: #f8f9fd;
+
+    display: flex;
+
+    align-items: center;
+
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.input-box:focus-within {
+    border-color: #2864e8;
+
+    box-shadow: 0 0 0 2px rgba(40, 100, 232, 0.08);
+}
+
+.input-icon {
+    width: 35px;
+
+    text-align: center;
+
+    color: #4b5563;
+
+    font-size: 14px;
+}
+
+.input-box input {
+    flex: 1;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #111827;
+
+    font-size: 14px;
+
+    padding: 0 5px;
+}
+
+.input-box input::placeholder {
+    color: #8a91a1;
+}
+
+.password-toggle {
+    width: 35px;
+
+    height: 100%;
+
+    border: none;
+
+    background: transparent;
+
+    color: #4b5563;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 14px;
+}
+
+.password-toggle:hover {
+    color: #2864e8;
+}
+
+.error-message {
+    display: block;
+
+    color: #dc2626;
+
+    font-size: 14px;
+
+    margin-top: 3px;
+
+    min-height: 0;
+}
+
+.remember-container {
+    margin-top: 2px;
+
+    margin-bottom: 19px;
+}
+
+.remember-label {
+    display: flex;
+
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.remember-label input {
+    position: absolute;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+.custom-checkbox {
+    width: 15px;
+
+    height: 15px;
+
+    border: 1px solid #c4ccdc;
+
+    border-radius: 4px;
+
+    background: #f8f9fd;
+
+    margin-right: 7px;
+
+    position: relative;
+}
+
+.remember-label input:checked + .custom-checkbox {
+    background: #2864e8;
+
+    border-color: #2864e8;
+}
+
+.remember-label input:checked + .custom-checkbox::after {
+    content: "✓";
+
+    position: absolute;
+
+    left: 2px;
+
+    top: -2px;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.remember-text {
+    font-size: 14px;
+
+    color: #626b7c;
+}
+
+.signin-button {
+    width: 100%;
+
+    height: 37px;
+
+    border: solid 2px rgba(0, 74, 198, 1);
+
+    border-radius: 8px;
+
+    background: #0757c9;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.signin-button:hover {
+    border: solid 2px rgba(0, 74, 198, 1);
+    background: rgba(248, 249, 255, 1);
+    color: rgba(0, 74, 198, 1);
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.4s;
+}
+
+.signin-button:active {
+    transform: scale(0.99);
+}
+
+.register-text {
+    text-align: center;
+
+    margin-top: 29px;
+
+    font-size: 14px;
+
+    color: #5f6673;
+}
+
+.register-text a {
+    color: #075fe5;
+
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 400px) {
+
+    .login-page {
+        padding: 12px;
+    }
+
+    .login-card {
+        padding: 35px 25px 25px;
+    }
+
+}

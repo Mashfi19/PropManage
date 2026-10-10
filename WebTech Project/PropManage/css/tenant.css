@@ -1,0 +1,292 @@
+
+@import url("style.css");
+@import url("landlord.css");
+
+.balance-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 32px 28px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 36px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--border-color, #e4e1e4);
+}
+
+.balance-info h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #6d6f78;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.balance-amount {
+    font-size: 38px;
+    font-weight: 800;
+    color: #1f2128;
+    margin-bottom: 6px;
+}
+
+.balance-due {
+    font-size: 13px;
+    color: #7b7e88;
+    margin-bottom: 20px;
+}
+
+.balance-icon-watermark {
+    font-size: 120px;
+    color: rgba(7, 85, 207, 0.05);
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.pay-now-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #0755cf;
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(7, 85, 207, 0.25);
+    transition: 0.2s ease;
+}
+
+.pay-now-btn:hover {
+    background: #004ac6;
+    transform: translateY(-1px);
+}
+
+.tenant-card-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding-top: 16px;
+}
+
+.btn-details {
+    background: #ffffff;
+    color: #25252a;
+    border: 1px solid #dcd8dc;
+    border-radius: 8px;
+    padding: 9px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.15s ease;
+}
+
+.btn-details:hover {
+    background: #f4f2f4;
+}
+
+.btn-proceed {
+    background: #0755cf;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 9px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.15s ease;
+}
+
+.btn-proceed:hover {
+    background: #004ac6;
+}
+
+.maintenance-form-panel {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    padding: 32px 30px;
+    margin-bottom: 36px;
+    border: 1px solid var(--border-color, #e4e1e4);
+}
+
+.maintenance-form-panel h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #25252a;
+}
+
+.form-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #555864;
+    letter-spacing: 0.6px;
+    margin-bottom: 8px;
+}
+
+.form-control-input {
+    width: 100%;
+    height: 44px;
+    padding: 0 16px;
+    border: 1px solid #dad6da;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 22px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.form-control-textarea {
+    width: 100%;
+    height: 120px;
+    padding: 14px 16px;
+    border: 1px solid #dad6da;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 22px;
+    outline: none;
+    resize: vertical;
+    transition: 0.2s ease;
+}
+
+.form-control-input:focus,
+.form-control-textarea:focus {
+    border-color: #0755cf;
+    box-shadow: 0 0 0 3px rgba(7, 85, 207, 0.08);
+}
+
+.photo-attachment-dropzone {
+    border: 2px dashed #cfcacf;
+    border-radius: 12px;
+    padding: 36px 20px;
+    text-align: center;
+    background: #fbf9fb;
+    cursor: pointer;
+    margin-bottom: 24px;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.photo-attachment-dropzone:hover {
+    border-color: #0755cf;
+    background: #f4f8fe;
+}
+
+.dropzone-icon {
+    font-size: 32px;
+    color: #646772;
+    margin-bottom: 8px;
+}
+
+.dropzone-text {
+    font-size: 14px;
+    color: #444752;
+    font-weight: 500;
+}
+
+.dropzone-hint {
+    font-size: 12px;
+    color: #8b8e98;
+    margin-top: 4px;
+}
+
+.photo-preview-box {
+    margin-top: 14px;
+    display: none;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #e0dde0;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo-preview-box img {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.status-tag {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.status-tag.paid {
+    background: #e4f7ee;
+    color: #009664;
+}
+
+.status-tag.overdue {
+    background: #fee7e7;
+    color: #c91919;
+}
+
+.status-tag.pending {
+    background: #fff4e5;
+    color: #d67400;
+}
+
+.status-tag.approved {
+    background: #e4f7ee;
+    color: #009664;
+}
+
+.status-tag.rejected {
+    background: #fee7e7;
+    color: #c91919;
+}
+
+.payment-method-selector {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.payment-method-card {
+    border: 2px solid #e5e2e5;
+    border-radius: 10px;
+    padding: 14px 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.payment-method-card:hover {
+    border-color: #0755cf;
+}
+
+.payment-method-card.selected {
+    border-color: #0755cf;
+    background: #edf3fc;
+    color: #0755cf;
+}
+
+.payment-method-icon {
+    font-size: 24px;
+    margin-bottom: 6px;
+    display: block;
+}
